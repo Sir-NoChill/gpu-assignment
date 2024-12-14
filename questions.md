@@ -1,14 +1,14 @@
 # Questions
 
-1. For these questions, extract and label the following metricks from your _m5out/stats.txt_ file:
-    1. **(2 points)** The total number of shader active ticks for both the MI200 and the MI300
-    2. **(2 points)** The percent utilization of the lanes in the GPU for both the MI200 and MI300
+1. For these questions, extract and label the following metrics from your _m5out/stats.txt_ file for both the `lin_reg` and `lin_reg_iter` binaries:
+    1. **(2 points)** The total number of shader active ticks
+    2. **(2 points)** The percent utilization of the lanes in the GPU
     3. **(4 points)** The number of accesses the GPU made to the GPU memory
-    4. **(2 points)** The number of ticks lost due to bank contention between thread blocks.
-    5. **(2 points)** The number of coalesced memory reads in the MI200 and the MI300.
+    4. **(2 points)** The number of ticks lost due to bank contention between thread blocks
+    5. **(2 points)** The number of coalesced memory reads
 
-2. Answer the following questions:
-    1. **(2 points)** What factors contribute to the difference in the shader active ticks between your implementation of the MI200 and MI300?
+2. Answer the following questions considering the source code of `lin_reg` and `lin_reg_iter`:
+    1. **(2 points)** What factors contribute to the difference in the shader active ticks between the two workloads?
     2. **(2 points)** Warp divergence is a major contributor to a decrease in total utilization of GPU hardware. Explain what factors contribute to this from a code perspective, from a hardware perspective.
     3. **(4 points)** Coalesced memory reads/writes give GPUs a significant advantage in throughput when compared to CPUs. Why do we not implement memory access coalescing in CPUs? Why does this work so well in GPUs?
 
